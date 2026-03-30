@@ -1,0 +1,126 @@
+.jobs-container {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.jobs-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 0;
+}
+
+.jobs-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.job-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 15px;
+}
+
+.job-header h3 {
+    font-size: 1.3rem;
+    color: #0066cc;
+    margin: 0;
+    flex: 1;
+}
+
+.job-type {
+    background-color: #e7f3ff;
+    color: #0066cc;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.job-company,
+.job-location,
+.job-salary,
+.job-position {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.job-company strong,
+.job-location strong,
+.job-salary strong,
+.job-position strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.job-description,
+.job-requirements {
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.job-description strong,
+.job-requirements strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.job-description p,
+.job-requirements p {
+    margin: 8px 0 0 0;
+    color: #666;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.job-postedby {
+    color: #999;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .jobs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .job-header {
+        flex-direction: column;
+    }
+
+    .job-type {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .jobs-header h1 {
+        font-size: 2rem;
+    }
+}

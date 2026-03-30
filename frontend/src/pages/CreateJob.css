@@ -1,0 +1,90 @@
+.create-job-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.create-job-card {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 100%;
+}
+
+.create-job-card h2 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.create-job-card .form-label {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.create-job-card .form-control,
+.create-job-card .form-select {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+}
+
+.create-job-card .form-control:focus,
+.create-job-card .form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.create-job-card .btn {
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.create-job-card .btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+}
+
+.create-job-card .btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.create-job-card .btn-primary:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.create-job-card .btn-secondary {
+    border: 2px solid #ddd;
+    color: #666;
+}
+
+.create-job-card .btn-secondary:hover {
+    border-color: #667eea;
+    color: #667eea;
+}
+
+@media (max-width: 768px) {
+    .create-job-card {
+        padding: 25px;
+    }
+
+    .create-job-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .row > .col-md-6 {
+        margin-bottom: 15px;
+    }
+}
